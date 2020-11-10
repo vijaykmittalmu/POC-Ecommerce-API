@@ -85,7 +85,7 @@ router.post("/reset-password/", async (req, res) => {
             subject: "Password Reset",
             html: `
             <h3>Reset password request</h3>
-            <p>Click this <a href="http://localhost:3001/reset/${userInfo.resetToken}">link</a> to reset password</p>
+            <p>Ecommerce: Click this <a href="http://localhost:3001/reset/${userInfo.resetToken}">link</a> to reset password</p>
             `
         });
         res.status(200).json({ status: 200, message: "Email has been send successfully." });
